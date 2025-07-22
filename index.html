@@ -8,13 +8,13 @@ title: Home
 <!-- LANDING SECTION -->
  <section id="landing" class="full-screen">
     <div class="landing-background" >
-        <img id="foo-dogs" src="/assets/img/lions.png" width="450px"  alt="sketch of foo dogs">
+        <img id="foo-dogs" src="{{ site.baseurl }}/assets/img/lions.png" width="450px"  alt="sketch of foo dogs">
 
         <div class="profile-card">
             <h1>Ailani Sato-Lim</h1>
-            <a href="{{ '/about/' | relative url }}">
+            <a href="{{ '/portfolio/bio/' | relative url }}">
             <div class="profile-box">
-                <img id="profile-pic" src="/assets/img/Photo_of_me.JPG" width="130px" alt="a photo of me">
+                <img id="profile-pic" src="{{ site.baseurl }}/assets/img/Photo_of_me.JPG" width="130px" alt="a photo of me">
                 <p>and life-centered design and the poetry of code</p>
             </div>
              </a>
@@ -22,16 +22,16 @@ title: Home
        
 
         <div class="star-control" >
-            <img src="/assets/img/red-star.png" alt="red star">
-                <a class="about-button" href="{{ '/about/' | relative url }}">about</a>
+            <img src="{{ site.baseurl }}/assets/img/red-star.png" alt="red star">
+                <a class="about-button" href="{{ '/bio/' | relative_url }}">about</a>
                 <a class="contact-button" href="{{ '/#contact' | relative url }}">contact</a>
-                <a class="works-button" href="{{ '/#projects' | relative_url }}">works</a>
+                <a class="works-button" href="{{ '/#case-studies' | relative_url }}">works</a>
         </div>
     </div>
  </section>
 
 
- <section id="projects">
+ <section id="case-studies">
 
     <div class="subsections-wrapper">
 
@@ -42,10 +42,10 @@ title: Home
 
 
             <div class="project-box">
-                <img class="project-thumbnail" src="/assets/img/New user.png" width="155px">
-                <img class="selection-pic"  src="/assets/img/category-selection.jpg" width="161px" >
+                <img class="project-thumbnail" src="{{ site.baseurl }}/assets/img/New user.png" width="155px">
+                <img class="selection-pic"  src="{{ site.baseurl }}/assets/img/category-selection.jpg" width="161px" >
                 <div class="gif-holder">
-                    <img class="curation-gif" src="/assets/img/Curation-FoundObject.gif" width="212px">
+                    <img class="curation-gif" src="{{ site.baseurl }}/assets/img/Curation-FoundObject.gif" width="212px">
                 </div>
             </div>
             
@@ -64,20 +64,20 @@ title: Home
                     <b>The Idea:</b> a mobile app for artists and collectors bridging the gap between the analog and digital. <br><br>
                      <i>Inspired by the thrill of treasure-hunting, making art out of scraps, and the gifts from magpies.</i></p>
                 <div class="more-button">
-                    <img src="/assets/img/redon-circle2.png" width="24px">
+                    <img src="{{ site.baseurl }}/assets/img/redon-circle2.png" width="24px">
                     <a href="{{ '/projects/found-object' | relative_url }}">Read more...</a>
                 </div>
             </div>
             
         </div>
-<!--        <div class="next-button"> <a href="{{ '/#two' | relative_url}}"> <img src="/assets/img/down-arrow.png"></a></div>-->
+<!--        <div class="next-button"> <a href="{{ '/#two' | relative_url}}"> <img src="{{ site.baseurl }}/assets/img/down-arrow.png"></a></div>-->
     </div>
     <div id="two" class="project-subsection">
         <div class="project-card">
 
 
             <div class="project-box">
-                <img class="website-img" src="/assets/img/tokyofish.png" width="100%" height="100%" style="object-fit: contain;">
+                <img class="website-img" src="{{ site.baseurl }}/assets/img/tokyofish.png" width="100%" height="100%" style="object-fit: contain;">
             </div>
             
             <div class="project-textbox">
@@ -97,7 +97,7 @@ title: Home
                     The goal was to maintain its original vintage UI flavor while drawing upon modern Japanese commerce site design.
                 </p>
                 <div class="more-button">
-                    <img src="/assets/img/redon-circle2.png" width="24px">
+                    <img src="{{ site.baseurl }}/assets/img/redon-circle2.png" width="24px">
                     <a href="{{ '/projects/tokyofish' | relative_url }}">Read more...</a>
                 </div>
             </div>
@@ -109,7 +109,7 @@ title: Home
 
 
             <div class="project-box">
-                <img class="website-img" src="/assets/img/website-mockup.jpg" width="100%" height="100%" style="object-fit: contain;">
+                <img class="website-img" src="{{ site.baseurl }}/assets/img/website-mockup.jpg" width="100%" height="100%" style="object-fit: contain;">
             </div>
             
             <div class="project-textbox">
@@ -131,7 +131,7 @@ title: Home
                     It's a continual work-in-progress, but please feel free to poke around.
                 </p>
                 <div class="more-button">
-                    <img src="/assets/img/redon-circle2.png" width="24px">
+                    <img src="{{ site.baseurl }}/assets/img/redon-circle2.png" width="24px">
                     <a href="{{ '/projects/pocketbook' | relative_url }}">Read more...</a>
                 </div>
             </div>
@@ -144,7 +144,7 @@ title: Home
 
 
             <div class="project-box">
-                <img class="poster-img" src="/assets/img/poster-pics.png" width="100%">
+                <img class="poster-img" src="{{ site.baseurl }}/assets/img/poster-pics.png" width="100%">
             </div>
             
             <div class="project-textbox">
@@ -160,8 +160,8 @@ title: Home
                 <p> A graphic design poster series employing Photoshop to give a modern twist on 70s bookcover design. 
                     Featuring words by Czech novelist Franz Kafka and Argentine short-story writer Jorge Luis Borges.  </p>
                 <div class="more-button">
-                    <img src="/assets/img/redon-circle3.png" width="24px">
-                    <a href="{{ '/projects/lit-posters' | relative_url }}">Read more...</a>
+                    <img src="{{ site.baseurl }}/assets/img/redon-circle3.png" width="24px">
+                    <a href="{{ '/projects/literature-posters' | relative_url }}">Read more...</a>
                 </div>
             </div>
             
@@ -189,7 +189,7 @@ title: Home
                 </p>
 
                 <p><span class="philo-headings">Outside Eye</span> <br>
-                    I'm a newcomer to web design, but I've been absorbing visual design <a href="{{ '/about/' | relative_url }}">all my life</a>.
+                    I'm a newcomer to web design, but I've been absorbing visual design <a href="{{ '/bio/' | relative_url }}">all my life</a>.
                     I have an outsider's eye that sees through convention and sterile templates. I believe novelization depends on the syncreticization of history.  
                     <br><br>
                     </p>
@@ -224,16 +224,16 @@ title: Home
         </div>
 
         <div id="stars-wrapper">
-            <img id="big-star" src="/assets/img/big-star.png" width="135px">
-            <img id="lil-star" src="/assets/img/lil-star.png" width="90px">
+            <img id="big-star" src="{{ site.baseurl }}/assets/img/big-star.png" width="135px">
+            <img id="lil-star" src="{{ site.baseurl }}/assets/img/lil-star.png" width="90px">
         </div>
 
-        <img id="sunset-image"  src="/assets/img/15193140-maximum-edit.jpeg" width="1000px">
+        <img id="sunset-image"  src="{{ site.baseurl }}/assets/img/15193140-maximum-edit.jpeg" width="1000px">
         <div class="star-control-bottom" >
-            <img src="/assets/img/red-star.png" alt="red star">
-                <a class="about-button" href="{{ '/about/' | relative_url }}">about</a>
+            <img src="{{ site.baseurl }}/assets/img/red-star.png" alt="red star">
+                <a class="about-button" href="{{ '/bio/' | relative_url }}">about</a>
                 <p class="contact-button-bottom">contact</p>
-                <a class="works-button-bottom" href="{{ '/#projects' | relative_url }}">works</a>
+                <a class="works-button-bottom" href="{{ '/#case-studies' | relative_url }}">works</a>
         </div>
 
     </div>

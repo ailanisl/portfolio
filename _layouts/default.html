@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ page.title }} | Portfolio</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="sticky-nav">
-      <a class="nav-item" href="/">HOME</a>
-      <a class="nav-item" href="/#projects">PROJECTS</a>
-      <a class="nav-subitem" href="/#projects">1.</a>
+      <a class="nav-item" href="{{ '/' | relative_url }}">HOME</a>
+      <a class="nav-item" href="{{ '/#case-studies' |relative_url }}">PROJECTS</a>
+      <a class="nav-subitem" href="{{  '/#case-studies' | relative_url }}">1.</a>
       <a class="nav-subitem" href="{{ '/#two' | relative_url}}">2.</a>
       <a class="nav-subitem" href="{{ '/#three' | relative_url}}">3.</a>
       <a class="nav-subitem" href="{{ '/#four' | relative_url}}">4.</a>
 
 
-      <a class="nav-item" href="/#philosophy">PHILOSOPHY</a>
-      <a class="nav-item" href="/#contact">CONTACT</a>
+      <a class="nav-item" href="{{ '/#philosophy' | relative_url}}">PHILOSOPHY</a>
+      <a class="nav-item" href="{{ '/#contact' | relative_url}}">CONTACT</a>
     </nav>
   </header>
 
