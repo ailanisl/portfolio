@@ -1,0 +1,560 @@
+---
+layout: project
+title: "Found Object"
+subtitle: "Mobile App Design"
+
+role: "Research Team Lead, Researcher, Sole Designer"
+timeline: "March-April 2025"
+tools: "Figma"
+
+tags: [UI/UX, Product Design, Prototyping]
+---
+
+<style>
+    .hero-wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;  
+        object-fit: cover;
+        image-rendering: auto;
+    }
+    #overview {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+    }
+
+    #film-wrapper {
+        width: 500px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #film-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        image-rendering: auto;
+    }
+    #mockup-pic {
+        position: relative;
+        bottom: 19rem;
+        left: 23rem;
+    }
+    #prototype-button {
+        position: relative;
+
+
+        width: fit-content;
+        
+        font-size: 1.1rem;
+
+        padding: 8px 15px;
+        border-radius: 30px;
+        background-color: #66bfff;
+        transition: all 0.3s ease;
+        
+    }
+    #prototype-button:hover {
+        content: "→" ;
+        background-color: #0077cc;
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.156);
+        transition: all 0.3s ease;
+    }
+
+    #prototype-button a {
+        color: #f6f5f0;
+        font-weight: 500;
+    }
+    .product-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+    .feature-display {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-display p {
+        text-align: center;
+        max-width: 300px;
+        margin-bottom: 2rem;
+    }
+    .feature-display h3 {
+        margin-bottom: 0;
+    }
+
+    #social-images{
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        gap: 4rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    body {
+        color: #584E45;
+    }
+    body h1 {
+        font-weight: 300;
+    }
+
+    #details {
+        margin-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;      
+    }
+    #goals, #audience {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #audience p {
+        padding-left: 1.5rem;
+        width: 60%;
+    }
+    #goals ol {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
+    #research {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #research-text {
+        position: relative;
+        top: 15rem;
+        margin-left: 55%;
+    }
+    #research-box img {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #further-directions p {
+        border: 1px solid #584E45;
+        padding: 0.5rem;
+        text-align: left;
+        width: fit-content;
+    }
+    #further-directions {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @media screen and (max-width:1100px) {
+        #social-images {
+            gap: 1.5rem;
+            justify-content: space-between;
+            width: 800px;
+        }
+        #mockup-pic {
+            left: 13rem;
+        }
+    }
+
+    @media screen and (max-width:920px) {
+        .section-heading {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+        .section-heading p{
+            padding: 1rem 0;
+
+        }
+        .image-wrapper {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }        
+
+    }
+
+    @media screen and (max-width: 840px){
+        #problem-columns {
+            flex-direction: column-reverse;
+        }
+
+        #problem-space {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-wrapper {
+            width: 490px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        #social-images {
+            flex-direction: column;
+            gap: 2rem;
+
+            
+        }
+        
+
+    }
+
+    @media screen and (max-width: 600px){
+        #prototype-button {
+            position: inherit;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        #mockup-pic {
+            width: 180px;
+            position: inherit;
+            margin-left: 20%;
+            margin-right: auto;
+            margin-top: 2rem;
+        }
+        .image-wrapper {
+            width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        #research-text{
+            display: block;
+            position: inherit;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 60%;
+        }
+        
+    }
+
+</style>
+<div class="hero-wrapper">
+    <img class="hero-image" src="/assets/img/found-object/hero-found-object.jpg" alt="Big shot of the app screens">
+</div>
+<section id="overview">
+    <div class="section-heading" style="padding-bottom: 2rem;"> 
+        <h2>Overview</h2>
+        <p > Found Object is an app to collect things found in the wild / in real life (not bits of data) and make them come to life in a curated display. 
+            This is a platform that functions as personal archive (where you tag things with metadata) and a personal museum (to curate your found objects). 
+            Inspired by the thrill of treasure-hunting, making art out of scraps, and crow gift.
+            <br> <br>
+            The name comes from the art term: A found object is a natural or man-made object that is found by 
+            an artist and kept because of some intrinsic interest the artist sees in it. (<a href="https://www.tate.org.uk/art/art-terms/f/found-object">Tate</a>). </p>
+    </div>
+
+    <div id="problem-space">
+        <div class="columns" id="problem-columns">
+            <div class="col1">
+                <h1>The Problem Space</h1>
+                <p class="proj-paragraph"><span style="font-weight: 500;">Artists and creatives find inspiration in both the digital and analog realms: </span> <br>
+                    e.g., using pen and paper sketches, going to curated exhibitions IRL and online, 
+                        walking in nature, looking at other artists' work on social media, etc..</p>
+                <div id="film-wrapper" style="max-width: 390px; ">
+                    <img src="/assets/img/found-object/hmw.png" width="300px" alt="How might we find a way to marry the two realms into a conceptually cohesive and  fluent space?">
+                </div>
+            </div>
+
+            <div class="col2" id="problem-column-2">
+                <div class="image-wrapper"  style="margin-top: 4rem; max-width: 400px;">
+                    <p> <i>We find artistic inspiration in many ways: </i></p>
+
+                    <img src="/assets/img/found-object/pics-fo.jpg" >
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!--SOLUTIONS Subsection -->
+    <div id="solution" style="max-height: 700px; background-color: #f6f5f0; padding: 4rem; padding-top: 2rem; border-radius: 20px;">
+        <div class="text">
+            <h1>The Solution</h1>
+            <p class="proj-paragraph">An app to collect things found in the wild 
+                (rather than bits of data) and make them come to life in a curated display.<br>
+                <br>A social platform that functions as personal archive 
+                (tag things with metadata) and a personal museum (curate your found objects!). </p>
+            <div id="prototype-button" style="left: 5rem;top: 5rem;">
+                <a href="https://www.figma.com/proto/ampv74lIs2xGewOXQOyCy3/Found-Object--HCD-Final-Project?page-id=0%3A1&node-id=1-2&p=f&viewport=450%2C463%2C0.23&t=hqkkQI7nH5KqhGCp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2"
+                title="Opens in a new tab" target="_blank" rel="noopener noreferrer">
+                Open Prototype</a>
+            </div>
+        </div>
+        <img id="mockup-pic" src="/assets/img/found-object/prototype-button.png" 
+                    alt="Mockup of the social section of Found Object">
+
+    </div>
+
+
+    <div id="product">
+        <h1>The Product</h1>
+        <div class="product-display" >
+            <div id="onboarding" class="feature-display">
+                <h2>Onboarding</h2>
+                <p>Agree to the rules of the social platform and pick your collection categories to start with.</p>
+                <div class="mobile-screen" >
+                    <video  autoplay loop muted playsinline>
+                        <source src="/assets/vids/found-object-onboarding.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div id="collections" class="feature-display">
+                <h2>Collections</h2> 
+                <p>Seamlessly switch from List view to Grid view.
+                     Comment to start a conversation about an object. </p>
+                <div class="image-wrapper">
+                    <img src="/assets/img/found-object/collections-fo.png">
+                </div>
+             </div>
+            <div id="curations" class="feature-display">
+                <h2>Curations</h2>
+                <p>Curate objects from your collections in an interactive display.</p>
+                <div class="mobile-screen" >
+                    <video autoplay loop muted playsinline>
+                        <source src="/assets/vids/found-object-curate.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div id="social" class="feature-display">
+                <h2>Social</h2>
+                <p>View your friend's found objects and customize your profile to showcase your collections and curations.</p>
+                <div id="social-images">
+                    <div class="mobile-screen" >
+                        <video autoplay loop muted playsinline>
+                            <source src="/assets/vids/found-object-social.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id="new-users" class="image-wrapper">
+                        <img src="/assets/img/found-object/social-user-fo.png">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="details">
+    <div class="section-heading"> 
+        <h2>The Details</h2>
+        <p>The building process was divided into two parts: the research phase and the designing phase.<br><br>
+        During the research phase, I led a group of three other researchers, designating roles and setting a timeline
+        based on our respective abilities and schedules. Our research methods included user surverys, interviews, 
+        user personas, and journeymapping. 
+        <br><br>
+        The designing phase was carried out individually. I conducted ideation sessions, created a design system, 
+        and completed a high-fidelity prototype of the final product. 
+        
+    
+        </p>
+    </div>
+
+    <div id="research">
+        <h1 style="margin-bottom: 2rem;">Preliminary User Research</h1>
+        <div class="columns">
+            <div id="goals">
+                <h3>Goals</h3>
+                <ol>
+                    <li>How do artists find inspiration for their projects?</li>
+                    <li>What tools do they currently use?</li>
+                </ol>
+            </div>
+            <div id="audience">
+                <h3>Audience</h3>
+                <p>Young creatives who are familiar with digital tools already <br>
+                = College-aged + Young professionals</p>
+            </div> 
+
+        </div>
+        <div id="research-box">
+            <div id="research-text"><p>I created surveys and interview guide, which my research team then spread to students at various college campuses. 
+                <br><br>In addition, I conducted a couple of competitive analyses on two inspiration based apps, Pinterest and Are.na </p>
+            </div>
+            <img src="/assets/img/found-object/all-research.png">
+            <p id="competitive-analysis" style=" margin-left: auto; margin-right: auto; width: 60%;"> 
+                In addition, I conducted a couple of competitive analyses on two inspiration based apps, 
+                Pinterest and Are.na.
+                
+                <br><br>The key difference between these two apps and my idea, 
+                though, is the emphasis on the <b>creating of </b>rather than the sharing of content, 
+                and <b>the content has a mapping to the non-digital world </b>
+                (one mostly shares things that have physical instantiation in your own life, 
+                like anything you possess or come across on the street). </p>
+        </div>
+            
+            <!--KEY INSIGHT FROM USERS-->
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #f6f5f0; padding: 2rem 0.5rem; border-radius: 20px;">
+            <h2>Key Insight</h2>
+            <p style="width: auto; max-width: 60%;">The key insight from the preliminary research was that young artists and creatives 
+                still find inspiration and joy in their non-digital lives. 
+                <div class="quote-wrapper" style="width: auto; max-width: fit-content; padding: 1rem;">One interviewee said, "I think [
+                an ideal tool] would <b>bridge the analog and the digital.</b>"</div> </p>
+            </div>
+
+            <!--Reddit Research-->
+        <div id="internet-scour" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+            <h2>Internet Scour</h2>
+            <p style="width: auto; max-width: 60%; margin-bottom: 2rem;">
+                After narrowing the scope of the project to the collection of analog things, 
+                I went online to see what people/collectors wanted such digital tools. Online forums, such as Reddit, were a good resource: </p>
+            <div class="image-wrapper">
+                <img src="/assets/img/found-object/forum-comments.png">
+            </div>
+
+            <div class="columns" style="margin-top: 4rem;">
+                <h3>User Needs</h3>
+                <ol>
+                    <li>Different views of collections (list view, grid view with diff sizes)</li>
+                    <li>Ability to add description to each item </li>
+                    <li>Platform that can have multiple categories of collections</li>
+                    <li>Sharing ability & Social Aspect: comment under item, display collections to others</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="prototyping" style="margin-top: 8rem;" >
+            <h1>Prototyping</h1>
+            <p>Moving on to the wireframes of the app, 
+                I knew it should have a clean, modern look that was simple and intuitive to use.  </p>
+            <h3 style="text-align: center; margin-top: 2rem;">Mid-fi Prototype</h3>
+            <div class="image-wrapper">
+                <img src="/assets/img/found-object/mid-fi.png" >
+            </div>
+            <div id="user-testing" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 4rem;">
+                <h1 style="margin-top: 4rem;">User Testing</h1>
+                
+                <p>With a functional mid-fi prototype (see right), I conducted 7 user tests. 
+                    The green sticky notes are some of the quoted comments on the design and user flows. </p>
+                <div class="image-wrapper">
+                    <img src="/assets/img/found-object/user-testing.png"  alt="image of the feedback I received from users">
+                </div>
+                    <p style="width: auto; max-width: 60%; margin-top: 4rem;">The general feedback spoke to the absence of search functions within each page, incorporating a more interactive curation space, and increasing the flexibility to edit app objects.
+                        <br><br>Based on UI Feedback: I changed the color scheme to reduce grayscale prominence and the bright red main color (changing it to a maroon).</p>
+                    <p style="width: auto; max-width: 60%;">Taking the user testing into careful consideration, I constructed by final hi-fi prototype...</p>
+            </div>
+           <!--FINAL DISPLAY--> 
+            <div id="features-design" style="background-color: #f6f5f0; padding: 4rem; padding-top: 2rem; border-radius: 20px;">
+                <h1>Hi-fi Features</h1>
+                <div id="prototype-button" style="margin-left: auto; margin-right: auto;">
+                    <a href="https://www.figma.com/proto/ampv74lIs2xGewOXQOyCy3/Found-Object--HCD-Final-Project?page-id=0%3A1&node-id=1-2&p=f&viewport=450%2C463%2C0.23&t=hqkkQI7nH5KqhGCp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2"
+                    title="Opens in a new tab" target="_blank" rel="noopener noreferrer">
+                    Open Prototype</a>
+                </div>
+                <h3>Selected Components</h3>
+                <div class="image-wrapper ">
+                    <img src="/assets/img/found-object/components.png" alt="image of components" > 
+                </div>
+
+                <h3>Design System and Typography</h3>
+                <img src="/assets/img/found-object/UI Design System.png" alt="image of design system" width="100%" height="auto" style="image-rendering: auto; border-radius: 6px;">
+
+            </div>
+
+        </div>
+
+        <div id="reflections" style="margin-top: 8rem; ">
+            <div class="columns">
+
+                <div id="ref-text">
+                    <h1>Reflections</h1>
+
+                    <p >In completing my final design, I realized why so many social media platforms tend to converge to a similar design and user flow. 
+                        <br><br>For example, maybe from pure overexposure, or pure human-centeredness, it makes sense to make the most ego-centric (Profile) on the right and the most intersubjective on the left side (Social Feed). 
+                        <br><br>If I had to guess: for right-handed people the thumb is closest to the right-side of the screen (easy access to the ego :)</p>
+                </div>
+                <div id="further-directions" style="margin-top: 2rem;" >
+                    <h3>Next Steps:</h3>
+                    <p>Add search to socials page</p>
+                    <p>Consider a mechanism to customize the curations tab</p>
+                    <p>Test the hi-fi prototype with users!</p>
+                    </div>
+            </div>
+            <div class="image-wrapper">
+            <img src="/assets/img/found-object/thank-you-f-o.jpg" style="margin-top: 6rem;"></div>
+        </div>
+
+</section>
+
+<nav class="outline-menu">
+  <ul>
+    <li><a href="#">Top</a></li>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#problem-space">Problem Space</a></li>
+        <li><a href="#solution">The Solution</a></li>
+        <li><a href="#product">The Product</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#details">The Details</a>
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#prototyping">Prototyping</a></li>
+        <li><a href="#user-testing">User Testing</a></li>
+        <li><a href="#features-design">Features & Design</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#reflections">Reflections</a></li>
+
+  </ul>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".outline-menu a");
+
+  const sections = Array.from(links)
+    .map(link => {
+      const id = link.getAttribute("href");
+      return document.querySelector(id);
+    })
+    .filter(Boolean); // remove nulls
+
+  function updateActiveLink() {
+    let scrollY = window.scrollY;
+
+    let currentSection = null;
+
+    for (let section of sections) {
+      if (scrollY >= section.offsetTop - 150) {
+        currentSection = section;
+      }
+    }
+
+    links.forEach(link => link.classList.remove("active"));
+
+    if (currentSection) {
+      const id = currentSection.getAttribute("id");
+      const activeLink = document.querySelector(`.outline-menu a[href="#${id}"]`);
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", updateActiveLink);
+  updateActiveLink(); // run once on load
+});
+</script>

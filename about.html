@@ -1,0 +1,106 @@
+---
+layout: default 
+permalink: /about/ 
+---
+<style>
+    .about-background {
+        margin: 10% 20%;
+        height: 100vh;
+    }
+
+    .star-control {
+        position: sticky;
+        transform: translateY(-20%);
+    }
+
+    #art-interests p{
+        font-size: 1.7rem;
+        padding-left: 2rem;
+    }
+    .hover-text {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-color: #0077cc;
+    }
+    .hover-image {
+        position: absolute;
+
+        opacity: 0;
+        z-index: 10;
+        display: block;
+        pointer-events: none;
+    }
+    
+    .hover-wrapper:hover .hover-image {
+        opacity: 0.8;
+    }
+</style>
+
+<div class="about-background">
+<h1> Hi, I'm Ailani. </h1>
+<p>A human who is (and will probably always be) trying-to-figure-it-out. 
+    <br><br>
+    For now: I'm studying design with an interest in the poetic and ambient web.</p>
+
+<p>I did research in Cognitive Science and Buddhist Studies at UC Berkeley.</p>
+
+
+<p>My visual interests are varying and span (sub)cultures
+    <br>
+    <div id="art-interests">
+        <p>From the skeuomorphic and chaotic design of the 
+            <span class="hover-wrapper">
+                    <span class="hover-text"><a href="https://wiby.me/">Old Internet</a></span>
+                    <img class="hover-image" src="/assets/img/about/wisdom-portal.png" alt="Wisdom Portal Browser" style="top: 15%; left: 60%;">
+            </span>, 
+            
+            and the 
+            <span class="hover-wrapper">
+                <span class="hover-text"><a href="https://deadsimplesites.com/">minimalist</a> </span>
+                <img class="hover-image" src="/assets//img/about/mnmlist.png" alt="mnmlist.com browser" style="border-radius: 3px; width: 200px; top:24%; left:11%">
+                </span>
+                
+                or 
+                <span class="hover-wrapper">
+                <span class="hover-text"><a href="https://brutalistwebsites.com/">brutalist</a> </span>
+                <img class="hover-image" src="/assets//img/about/brutalist.png" alt="brutalist web design browser" style="border-radius: 3px; width: 200px; top:18%; left:41%">
+                </span>
+                 UI
+        of today's web...</p>
+
+        <p>To the traditional art realms of Japanese <span class="hover-wrapper">
+                <span class="hover-text">woodblock printing</span>
+                <img class="hover-image" src="/assets//img/about/woodblock.jpg" alt="woodblock print of waterfall" style="border-radius: 3px; width: 200px; top:14%; left:51%;">
+                </span> and French<span class="hover-wrapper">
+                <span class="hover-text">impressionist landscapes</span>
+                <img class="hover-image" src="/assets//img/about/cezanne.jpg" alt="Cezanne landscape" style="border-radius: 3px; width: 200px; top:19%; left:59%;">
+                </span>...</p>
+
+        <p>To the <s>pretentious</s> modernist niches of <span class="hover-wrapper">
+                <span class="hover-text">surrealist lithography</span>
+                <img class="hover-image" src="/assets//img/about/dali.jpg" alt="Dalí lithography" style="border-radius: 3px; width: 200px; top:39%; left:9%;">
+                </span>, <span class="hover-wrapper">
+                <span class="hover-text"><a href="https://nearlywaves.tumblr.com/">analog collage</a> </span>
+                <img class="hover-image" src="/assets//img/about/collage.jpg" alt="John Gall collage" style="border-radius: 3px; width: 200px; top:60%; left:31%">
+                </span>, and <span class="hover-wrapper">
+                <span class="hover-text"><a href="https://www.moma.org/magazine/articles/1047">desert transcendentalism.</a> </span>
+                <img class="hover-image" src="/assets//img/about/pelton.jpg" alt="Agnes Pelton painting" style="border-radius: 3px; width: 200px; top:55%; left:61%">
+                </span></p>
+    </div>
+</p>
+
+<p>My explorations in Buddhist philosophies, modernist literature and poetry, 
+                and 4E cognition inform my practices and ideals in design.</p>
+
+        <div class="star-control" >
+            <img src="/assets/img/red-star.png" alt="red star">
+                <a class="contact-button" href="{{ '/' | relative url }}">back</a>
+        </div>
+
+
+
+</div>
+
+<footer>
+    {% include footer.html %}
+</footer>

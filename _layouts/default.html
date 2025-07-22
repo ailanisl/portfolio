@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }} | Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="sticky-nav">
+      <a class="nav-item" href="/">HOME</a>
+      <a class="nav-item" href="/#projects">PROJECTS</a>
+      <a class="nav-subitem" href="/#projects">1.</a>
+      <a class="nav-subitem" href="{{ '/#two' | relative_url}}">2.</a>
+      <a class="nav-subitem" href="{{ '/#three' | relative_url}}">3.</a>
+      <a class="nav-subitem" href="{{ '/#four' | relative_url}}">4.</a>
+
+
+      <a class="nav-item" href="/#philosophy">PHILOSOPHY</a>
+      <a class="nav-item" href="/#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+</html>
