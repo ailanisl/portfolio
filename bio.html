@@ -5,12 +5,11 @@ permalink: /bio/
 <style>
     .about-background {
         margin: 10% 20%;
-        height: 100vh;
     }
 
     .star-control {
         position: sticky;
-        transform: translateY(-20%);
+        top: 75vh;
     }
 
     #art-interests p{
@@ -20,7 +19,7 @@ permalink: /bio/
     .hover-text {
         text-decoration: underline;
         text-decoration-style: dotted;
-        text-decoration-color: #0077cc;
+        text-underline-offset: 1;
     }
     .hover-image {
         position: absolute;
@@ -33,6 +32,9 @@ permalink: /bio/
     
     .hover-wrapper:hover .hover-image {
         opacity: 0.8;
+    }
+    footer {
+        z-index: 999;
     }
 </style>
 
@@ -47,7 +49,7 @@ permalink: /bio/
 
 <p>My visual interests are varying and span (sub)cultures
     <br>
-    <div id="art-interests">
+    <div id="art-interests" >
         <p>From the skeuomorphic and chaotic design of the 
             <span class="hover-wrapper">
                     <span class="hover-text"><a href="https://wiby.me/">Old Internet</a></span>
@@ -89,8 +91,6 @@ permalink: /bio/
     </div>
 </p>
 
-<p>My explorations in Buddhist philosophies, modernist literature and poetry, 
-                and 4E cognition inform my practices and ideals in design.</p>
 
         <div class="star-control" >
             <img src="{{ site.baseurl }}/assets/img/red-star.png" alt="red star">

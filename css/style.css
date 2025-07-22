@@ -66,7 +66,7 @@ a:hover {
     right: 5%;
 
     transform: translateY(-50%) rotate(90deg);
-    transform-origin: right center;
+    transform-origin: right;
     z-index: 999;
 
     font-family: "Helvetica Neue", sans-serif;
@@ -102,6 +102,9 @@ a:hover {
 
 
 /*=========== LANDING PAGE ================ */
+#landing {
+    height: 100vh;
+}
 .landing-background {
     max-width: 1200px;
     position: relative;
@@ -136,7 +139,7 @@ a:hover {
     max-width: 215px;
 
 
-    border: 1px dotted #0077cc;
+    border: 1px dotted #6d635b;
 }
 
 .profile-box p {
@@ -165,10 +168,12 @@ a:hover {
 /* ==== STAR COnTROL ===== */
 .star-control {
     position: absolute;
-    top: 74%;
+    top: 75vh;
     right: 50%;
     left: 50%;
 
+    margin-left: auto;
+    margin-right: auto;
     width: fit-content;
     height: fit-content;
 }
@@ -509,7 +514,7 @@ blockquote {
 /* PROJECT NAVBAR (_includes) */
 .outline-menu {
   position: fixed;
-  bottom: 38rem;
+  top: 18rem;
   left: 2rem;
   align-self: flex-start;
   width: fit-content;
