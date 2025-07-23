@@ -8,8 +8,9 @@ title: Home
 <!-- LANDING SECTION -->
  <section id="landing" class="full-screen">
     <div class="landing-background" >
-        <img id="foo-dogs" src="{{ site.baseurl }}/assets/img/lions.png" width="450px"  alt="sketch of foo dogs">
-
+        <div id="foo-wrapper">
+            <img id="foo-dogs" src="{{ site.baseurl }}/assets/img/lions.png" width="450px"  alt="sketch of foo dogs">
+        </div>
         <div class="profile-card">
             <h1>Ailani Sato-Lim</h1>
             <a href="{{ '/portfolio/bio/' | relative url }}">
@@ -227,8 +228,9 @@ title: Home
             <img id="big-star" src="{{ site.baseurl }}/assets/img/big-star.png" width="135px">
             <img id="lil-star" src="{{ site.baseurl }}/assets/img/lil-star.png" width="90px">
         </div>
-
-        <img id="sunset-image"  src="{{ site.baseurl }}/assets/img/15193140-maximum-edit.jpeg" width="1000px">
+        <div class="image-wrapper">
+            <img  src="{{ site.baseurl }}/assets/img/15193140-maximum-edit.jpeg" >
+        </div>
         <div class="star-control-bottom" >
             <img src="{{ site.baseurl }}/assets/img/red-star.png" alt="red star">
                 <a class="about-button" href="{{ '/bio/' | relative_url }}">about</a>
