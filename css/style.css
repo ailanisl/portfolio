@@ -25,7 +25,8 @@ p {
 
 a {
     color: #584E45;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 a:hover {
@@ -452,6 +453,26 @@ blockquote {
         justify-content: center; 
         align-items: center;
     }
+    .project-flex {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .project-flex p {
+        width: 75%;
+    }
+    .project-flex h1 {
+        width: auto; 
+        margin-right: 50%;
+    }
+    .image-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+    }
 
 
 .proj-paragraph {
@@ -473,7 +494,7 @@ blockquote {
 }
 
 .image-wrapper {
-    width: 900px;
+    max-width: 900px;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -491,8 +512,7 @@ blockquote {
 
 .section-heading {
     background-color: #f6f5f0; 
-    padding: 4rem; 
-    padding-top: 2rem; 
+    padding: 2rem 4rem; 
     border-radius: 20px;
 
     width: fit-content;
@@ -628,6 +648,19 @@ blockquote {
         }
         .profile-card {
             transform: translateX(-4.5rem);
+        }
+        .project-flex {
+            display: hidden;
+        }
+        .project-flex p {
+            width: 96%;
+        }
+
+    }
+
+    @media screen and (max-width: 400px){
+        .project-box .selection-pic {
+            display: none;
         }
 
     }

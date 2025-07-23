@@ -4,21 +4,154 @@ title: "The Pocketbook"
 subtitle: "Frontend Web Design"
 
 role: "Designer"
-timeline: "July 2025"
+timeline: "July 2025 (3 weeks)"
 tools: "VSCode, Jekyll, Github, and Figma"
 
 tags: [Frontend Development, UI Design]
 ---
-<div class="image-wrapper">
-    <img src="{{ site.baseurl }}/assets/img/website-mockup.jpg">
-</div>
-<div >
-    <p style="width: 80%;">This is a personal wiki and digital florilegium that stores linked articles, quotes, thoughts, music, and art. 
+<style>
+@media screen and (max-width: 600px){ 
+      .outline-menu {
+          display: none;
+          transition: display 0.3s ease;
+
+      }
+    }
+</style>
+
+<section id="overview" >
+    <div class="project-flex">
+        <div class="image-wrapper" style="margin-top: 4rem;">
+            <a href="https://ailanisl.github.io/"><img src="{{ site.baseurl }}/assets/img/website-mockup.jpg"></a>
+        </div>
+    </div>
+    <div class="section-heading">
+        <h2>Overview</h2>
+        <p>This is a personal wiki and digital florilegium that stores linked articles, quotes, thoughts, music, and art. 
         <br><br>
         I learned HTML, CSS, and Javascript to code this website by hand, 
         as I wanted to greatest degree of latitude to execute my vision, and to keep the site as low-tech and as maintainable as possible.
         <br><br>
         It's a continual work-in-progress, but please feel free to poke around: <a href="https://ailanisl.github.io/">The Pocketbook</a>
     </p>
+    </div>
+    <div id="problem-space" class="project-flex">
+        <h1>Problem Space</h1>
+        <p>
+        With social media overrun by corporate interests that exploit our attention and psychological vulnerabilities for profit, I became disillusioned with the Internet as a whole. 
+        <br><br>I didn't come of age in the nascency of the Internet, but rather during the adolescence of social media. And, I had fun on social media: I loved putting my style and tastes on display, curating art images on the Instagram grid, sharing what I am listening to at the moment. 
+        <br><br>Yet, it was just the structure of those platforms that felt limiting to creative impulsivity. Everything was so contrived.
+        </p>
+        <div class="quote-wrapper" style="width: auto; max-width: fit-content; padding: 1.5rem;">
+            But a personal website gives one the latitude to do all of the above without the burden of templates. </div>
+        <p>I wanted something that supported my personal knowledge database, commonly referred to as a commonplace. I obsessively take notes on things, 
+            collect quotes, and log my books in my commonplace notebooks.
+        </p>
+        <p>The problem was that, being analog, there was no comprehensive index or organizing system. If I wanted to go back to something, I'd have to flip through copious pages and hope my memory was up to the task. </p>
+        <p>I had a supplemental Google Keep account to store some of my quotes, and I was impressed by the tagging system and how easily it allowed me to synthesize ideas and make connections between disparate disciplines. </p>
+        <p>Notion, Obsidian, other note-taking applications were existent, but the lack of design freedom put me off. I needed to make something myself.  </p>
+   
+   
+    </div>
 
-</div>
+    <div id="solution" class="project-flex">
+        <h1 style="margin-right: 70%;">Solution</h1>
+        <p style="font-size: 2rem;">
+            A hand-coded website to preserve my commonplace journal. A “pocketbook” that is a knowledge repository and contains my collections of quotes, poems, music, books, in addition to some of my thoughts.
+        </p>
+
+        <p>These were pretty common in the early Internet, with websites such as Gwern, Bactra.org, and Piero Scaruffi being popular public knowledge bases. </p>
+    <div class="image-wrapper">
+        <div class="image-row">
+            <a href="https://gwern.net/"><img src="{{ site.baseurl }}/assets/img/pocketbook/gwern.png" alt="Screenshot of gwern.net"></a>
+            <a href="https://www.scaruffi.com/"><img src="{{ site.baseurl }}/assets/img/pocketbook/piero.png" alt="Screenshot of scaruffi.com"></a>
+            <a href="http://bactra.org/"><img src="{{ site.baseurl }}/assets/img/pocketbook/cosma.png" alt="Screenshot of bactra.org"></a>
+        </div>
+    </div>
+    <p>Now, these type of websites manifest themselves as <a href="https://maggieappleton.com/garden-history">"digital gardens"</a> which have been pretty popular as of late. </p>
+    </div>
+
+</section>
+
+<section id="details">
+    <div id="learning-curve" class="project-flex">
+        <h1>Critical Learning Curve</h1>
+        <p>To do all this, I need to first know how to even start making a website. So, I found a student-taught course (Web Design Decal) through Berkeley, available on Youtube for free. </p>
+        <p>And so, I learned HTML, CSS, and Javascript in a matter of three weeks. </p>
+        <div class="image-wrapper" style="width: 50%;">
+            <img src="{{ site.baseurl }}/assets/img/pocketbook/web-icons.webp" alt="icons of HTML, CSS, and JS" >
+        </div>
+    </div>
+
+    <div id="research" class="project-flex" >
+        <h1>Research and Design</h1>
+        <div class="image-wrapper" >
+            <img src="{{ site.baseurl }}/assets/img/pocketbook/simple-sites.png" alt="icons of HTML, CSS, and JS" style="mix-blend-mode: multiply;">
+        </div>
+    </div>
+</section>
+
+<nav class="outline-menu">
+  <ul>
+    <li><a href="#">Top</a></li>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#problem-space">Problem Space</a></li>
+        <li><a href="#solution">The Solution</a></li>
+        <li><a href="#product">The Product</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#details">The Details</a>
+      <ul>
+        <li><a href="#learning-curve">Learning Curve</a></li>
+
+        <li><a href="#research">Research</a></li>
+        <li><a href="#prototyping">Prototyping</a></li>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#reflections">Reflections</a></li>
+
+  </ul>
+</nav>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".outline-menu a");
+
+  const sections = Array.from(links)
+    .map(link => {
+      const id = link.getAttribute("href");
+      return document.querySelector(id);
+    })
+    .filter(Boolean); // remove nulls
+
+  function updateActiveLink() {
+    let scrollY = window.scrollY;
+
+    let currentSection = null;
+
+    for (let section of sections) {
+      if (scrollY >= section.offsetTop - 150) {
+        currentSection = section;
+      }
+    }
+
+    links.forEach(link => link.classList.remove("active"));
+
+    if (currentSection) {
+      const id = currentSection.getAttribute("id");
+      const activeLink = document.querySelector(`.outline-menu a[href="#${id}"]`);
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", updateActiveLink);
+  updateActiveLink(); // run once on load
+});
+</script>

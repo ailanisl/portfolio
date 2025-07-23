@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>{{ page.title }} | Portfolio</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -14,6 +16,9 @@
 
     body {
       font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    }
+    html, body {
+      overflow-x: hidden;
     }
 
     .content-wrapper {
@@ -75,7 +80,11 @@
       }
     }
     @media screen and (max-width: 600px){ 
-      
+      .outline-menu {
+          display: none;
+          transition: display 0.3s ease;
+
+      }
     }
 
     
@@ -124,41 +133,7 @@
 
 {%- include footer.html -%}
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll(".outline-menu a");
 
-  const sections = Array.from(links)
-    .map(link => {
-      const id = link.getAttribute("href");
-      return document.querySelector(id);
-    })
-    .filter(Boolean); // remove nulls
-
-  function updateActiveLink() {
-    let scrollY = window.scrollY;
-
-    let currentSection = null;
-
-    for (let section of sections) {
-      if (scrollY >= section.offsetTop - 150) {
-        currentSection = section;
-      }
-    }
-
-    links.forEach(link => link.classList.remove("active"));
-
-    if (currentSection) {
-      const id = currentSection.getAttribute("id");
-      const activeLink = document.querySelector(`.outline-menu a[href="#${id}"]`);
-      if (activeLink) {
-        activeLink.classList.add("active");
-      }
-    }
-  }
-
-  window.addEventListener("scroll", updateActiveLink);
-  updateActiveLink(); // run once on load
-});
 </script>
 </body>
 
