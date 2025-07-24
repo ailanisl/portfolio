@@ -65,8 +65,11 @@
       .outline-menu {
           display: none;
           transition: display 0.3s ease;
-
+      
       }
+      #backToTop.show {
+            display: block;
+        }
       .proj-header {
         border-bottom: 1px solid #584E45 ;
         background-color: #FFFEF9 ;
@@ -128,12 +131,31 @@
 
       {{ content }}
     </div>
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
 
   </main>
 
 {%- include footer.html -%}
 <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("backToTop");
 
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        btn.classList.add("show");
+      } else {
+        btn.classList.remove("show");
+      }
+    });
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
 </script>
 </body>
 
