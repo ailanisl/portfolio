@@ -10,13 +10,43 @@ tools: "VSCode, Jekyll, Github, and Figma"
 tags: [Frontend Development, UI Design]
 ---
 <style>
+  .indented-text {
+    padding-left: 8rem;
+  }
+  .col2 .image-wrapper {
+    margin-top: 9rem;
+  }
+  #components-pocketbook {
+    position: relative; 
+    bottom: 4rem;
+  }
+@media screen and (max-width: 1230px) {
+  #components-pocketbook {
+    bottom:1rem;
+  }
+}
+
 @media screen and (max-width: 600px){ 
       .outline-menu {
           display: none;
           transition: display 0.3s ease;
 
       }
+      .indented-text {
+        padding-left: 0;
+      }
+      .col2 .image-wrapper {
+        margin-top: 1rem;
+      }
+
+      .columns {
+        gap: 1rem;
+      }
+      #components-pocketbook {
+        bottom: 0;
+      }
     }
+
 </style>
 
 <section id="overview" >
@@ -86,8 +116,60 @@ tags: [Frontend Development, UI Design]
     <div id="research" class="project-flex" >
         <h1>Research and Design</h1>
         <div class="image-wrapper" >
-            <img src="{{ site.baseurl }}/assets/img/pocketbook/simple-sites.png" alt="icons of HTML, CSS, and JS" style="mix-blend-mode: multiply;">
+            <img loading="lazy" src="{{ site.baseurl }}/assets/img/pocketbook/simple-sites.png" alt="Are.na collection of simple sites" style="mix-blend-mode: multiply;">
+            <p>For the visual design of the website, I was inspired by the old internet style, the hand-coded and ambient web, 
+              and minimalist UI.  I  wanted a low-tech site and to minimize my use of Javascript, so no fancy animations, 
+              no  web-downloaded fonts. But I did want to include images (dithered and svg wherever possible), so it is an aspiring low-tech site.</p>
+            <p>I did extensive research (i.e. web-surfing) and mood-boarding to get a sense of what has been done and what is feasible.
+               <a href="https://www.are.na/ailani-sato-lim/simple-sites-d6h6m1dgkdq">A collection of simple sites</a> (and their links) I like is available to view on my Are.na (44 blocks at time of writing).</p>
         </div>
+    </div>
+
+    <div id="prototyping" class="project-flex">
+        <h1>Wireframes and Prototyping</h1>
+        <div class="columns" id="wire-columns">
+          <div class="col1" >
+            <div class="image-wrapper">
+              <img loading="lazy" src="{{ site.baseurl }}/assets/img/pocketbook/wireframes.png" alt="wireframes of the Pocketbook">
+            </div>
+            <div class="indented-text">
+              <p>In Figma, I designed hi-fi prototype of the website, with sets of components and their variables. </p>
+              <p>I went through lots of different versions for minute elements of the web design (e.g., the recent post cards). </p>
+              <p>I wanted something clean and simple, yet offered some bit of creative unexpectedness.</p>
+            </div>
+            
+          </div>
+          <div class="col2" >
+            <div class="image-wrapper">
+              <img loading="lazy" src="{{ site.baseurl }}/assets/img/pocketbook/styles-pocketbook.png">
+            </div>
+          </div>
+        </div>
+        <div class="image-wrapper" id="components-pocketbook">
+            <img loading="lazy" src="{{ site.baseurl }}/assets/img/pocketbook/components-pocketbook.png" alt="wireframes of the Pocketbook">
+        </div>
+    </div>
+
+    <div id="implementation" class="project-flex">
+      <h1>Frontend Implementation</h1>
+      <p>When I finished the designs I was at a lost as to how to convert those to HTML and CSS. <br><br>
+        So I meandered over to <b>Webflow</b>, hand-copied my  Figma designs in there. 
+        The structure that Webflow forces you to use  actually made me visualize how I was supposed to copy my prototypes into HTML/CSS. <br><br>
+        <b>ChatGPT and AI tools</b> were helpful in getting me unstuck for coding  problems, 
+        but I limited my use, as I didn't want to rely on it too much.</p>
+
+        <p>I decided to use <b>Jekyll</b> as a static site generator, and <b>Github</b> to host it. 
+          Thanks to <a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB">Giraffe Academy</a> on Youtube I learned how to navigate the jungle of Jekyll.
+          <br><br>
+          I learned a lot about the <b>Liquid (template), markdown, and YAML (data serialization) languages</b> just by doing in the process. 
+        </p>
+
+        <div class="image-wrapper" id="hi-fi-pocketbook">
+            <img loading="lazy" src="{{ site.baseurl }}/assets/img/pocketbook/hi-fi-pocketbook.png" alt="The webpages of the Pocketbook">
+        </div>
+
+        
+
     </div>
 </section>
 
@@ -109,6 +191,7 @@ tags: [Frontend Development, UI Design]
         <li><a href="#research">Research</a></li>
         <li><a href="#prototyping">Prototyping</a></li>
         <li><a href="#implementation">Implementation</a></li>
+        <li><a href="#features">Features</a></li>
       </ul>
     </li>
 
