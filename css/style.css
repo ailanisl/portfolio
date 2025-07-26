@@ -63,7 +63,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 760px;
+    top: 640px;
     right: 2.5%;
 
     transform: translateY(-50%) rotate(90deg);
@@ -78,7 +78,7 @@ a:hover {
     border-bottom: 1px solid #584E45;
     border-left: 1px solid #584E45;
 
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     background-color: #FFFEF9;
     color: #584E45;
     font-size: 0.75;
@@ -391,7 +391,6 @@ a:hover {
 .columns img {
     width: 100%;
     height: auto;
-    image-rendering: auto ;
 }
 
 .col {
@@ -399,7 +398,9 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 420px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #sunset-image {
@@ -557,7 +558,7 @@ blockquote {
 /* PROJECT NAVBAR (_includes) */
 .outline-menu {
   position: fixed;
-  top: 15rem;
+  top: 8rem;
   left: 2rem;
   align-self: flex-start;
   width: fit-content;
@@ -728,6 +729,13 @@ blockquote {
         }
         .columns{
             flex-direction: column;
+        }
+        .col1, .col2 {
+            max-width: 300px;
+            width: auto;
+        }
+        .col h1 {
+            padding-left: 5%;
         }
         .project-box .project-thumbnail {
             display: none;
