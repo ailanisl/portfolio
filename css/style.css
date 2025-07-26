@@ -158,8 +158,8 @@ a:hover {
 }
 .profile-card {
     position: absolute;
-    top: 13rem;
-    left: 17%;
+    top: 11rem;
+    left: 13%;
     max-width: fit-content;
     display: flex;
     flex-direction: column;
